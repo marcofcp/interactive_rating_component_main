@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Buttons</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container-fluid section1 d-flex justify-content-center">
+        <div class="box-content-rating align-self-center">
+            <div class="box" id="box">
+                <div class="star-box"><img src="images/icon-star.svg" alt="icon star rating"></div>
+                <h3 class="text-white">How did we do?</h3>
+                <p class="description">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+                <ul class="p-0">
+                    <li><button class="botao-rating" name="rating">1</button></li>
+                    <li><button class="botao-rating" name="rating">2</button></li>
+                    <li><button class="botao-rating" name="rating">3</button></li>
+                    <li><button class="botao-rating" name="rating">4</button></li>
+                    <li><button class="botao-rating" name="rating">5</button></li>
+                </ul>
+                <button type="submit" class="text-uppercase submit-button" id="submit-button" onclick="submit()">submit</button>
+            </div>
+        </div>
+
+        <div class="box-content-thanks align-self-center" id="box-content-thanks">
+            <div class="box-content text-center" id="box-content">
+                <div class="image-thanks mx-auto">
+                    <img src="images/illustration-thank-you.svg" alt="image thanks">
+                </div>
+                <p class="my-4 text-center"><span id="selected-span">You selected <span id="rating-span"></span> out of 5</span></p>
+                <p class="thank-you text-white my-4">Thank you!</p>
+                <p class="thanks-description">We appreciate you taking the time to give a rating. if you ever need more support, don't hesitate to get in touch!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
