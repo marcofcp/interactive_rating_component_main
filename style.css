@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/* Some color bases for the rest of the styling */
 :root {
     --cor1: #F2F2F2;
     --cor2: #F26A1B;
@@ -64,7 +65,7 @@ ul li button:hover {
     cursor: pointer;
     background-color: var(--cor2);
 }
-.botao-rating:focus {
+.button-rating:focus {
     background-color: var(--cor3);
 }
 .submit-button {
